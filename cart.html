@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Store | Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://assets.adobedtm.com/e9875dd51dbe/c8d783fd7436/launch-6d8ca5cf7bfb-development.min.js" async></script>
+  <script src="site.js" defer></script>
+</head>
+<body data-page-type="cart">
+  <header class="site-header">
+    <a class="brand" href="index.html" id="home-logo">Demo Store</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="cart.html" id="nav-cart" aria-current="page">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <p class="breadcrumbs"><a href="index.html" id="breadcrumb-home">Home</a> / Cart</p>
+    <h1>Your cart</h1>
+    <section id="cart-content" class="panel" aria-live="polite">
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Order total</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+
+      <fieldset class="checkout-options">
+        <legend>Choose checkout method</legend>
+        <label class="choice">
+          <input type="radio" name="checkout-method" id="checkout-standard" value="Standard" checked>
+          Standard checkout
+        </label>
+        <label class="choice">
+          <input type="radio" name="checkout-method" id="checkout-express" value="Express">
+          Express checkout
+        </label>
+      </fieldset>
+
+      <p id="cart-message" class="status-message" role="status" aria-live="polite"></p>
+      <div class="button-row">
+        <a class="button button-secondary" href="index.html#products" id="continue-shopping-button">Continue Shopping</a>
+        <button type="button" class="button" id="proceed-to-pay-button" data-action="checkout-start">Proceed to Pay</button>
+      </div>
+      <p class="small-note">Demo only: checkout is simulated. No payment information is collected.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">Demo Store · No real payments</footer>
+</body>
+</html>

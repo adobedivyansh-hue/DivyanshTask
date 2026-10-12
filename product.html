@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Store | Product</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://assets.adobedtm.com/e9875dd51dbe/c8d783fd7436/launch-6d8ca5cf7bfb-development.min.js" async></script>
+  <script src="site.js" defer></script>
+</head>
+<body data-page-type="product">
+  <header class="site-header">
+    <a class="brand" href="index.html" id="home-logo">Demo Store</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="cart.html" id="nav-cart">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="breadcrumbs"><a href="index.html" id="breadcrumb-home">Home</a> / Product</p>
+    <section class="product-detail">
+      <div id="product-art" class="product-art product-art-large art-blue" aria-hidden="true">A</div>
+      <div class="product-copy">
+        <p id="product-category" class="category-label">Electronics</p>
+        <h1 id="product-name">Wireless Headphones</h1>
+        <p id="product-price" class="price price-large">₹2,499</p>
+        <p id="product-description">Comfortable everyday headphones for work, travel, and listening.</p>
+        <p class="small-note">Product ID: <span id="product-id-display">Product_A</span></p>
+        <div class="button-row">
+          <button type="button" class="button" id="add-to-cart-button" data-action="add-to-cart">Add to Cart</button>
+          <a class="button button-secondary" id="back-to-products-link" href="index.html#products">Continue Shopping</a>
+        </div>
+        <p id="product-message" class="status-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Demo Store · No real payments</footer>
+</body>
+</html>

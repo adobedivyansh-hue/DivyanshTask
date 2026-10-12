@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Store | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://assets.adobedtm.com/e9875dd51dbe/c8d783fd7436/launch-6d8ca5cf7bfb-development.min.js" async></script>
+  <script src="site.js" defer></script>
+</head>
+<body data-page-type="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" id="home-logo">Demo Store</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" id="nav-home">Home</a>
+      <a href="cart.html" id="nav-cart">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">TRAINING STORE</p>
+      <h1>Find your next favourite</h1>
+      <p>A small demo shop for practising Adobe Analytics data collection.</p>
+      <a class="button button-secondary" href="#products" id="browse-products-link">Browse products</a>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Featured products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-art art-blue" aria-hidden="true">A</div>
+          <p class="category-label">Electronics</p>
+          <h3>Wireless Headphones</h3>
+          <p class="price">₹2,499</p>
+          <a class="button product-link" id="product-a-link" data-product-id="Product_A" href="product.html?product=Product_A">View Product A</a>
+        </article>
+        <article class="product-card">
+          <div class="product-art art-orange" aria-hidden="true">B</div>
+          <p class="category-label">Clothing</p>
+          <h3>Everyday Hoodie</h3>
+          <p class="price">₹1,499</p>
+          <a class="button product-link" id="product-b-link" data-product-id="Product_B" href="product.html?product=Product_B">View Product B</a>
+        </article>
+        <article class="product-card">
+          <div class="product-art art-green" aria-hidden="true">C</div>
+          <p class="category-label">Accessories</p>
+          <h3>Everyday Backpack</h3>
+          <p class="price">₹1,999</p>
+          <a class="button product-link" id="product-c-link" data-product-id="Product_C" href="product.html?product=Product_C">View Product C</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo-banner" aria-labelledby="promo-heading">
+      <div>
+        <p class="eyebrow">LIMITED DEMO OFFER</p>
+        <h2 id="promo-heading">A little something for your next order</h2>
+        <p>Promotional content for testing link tracking if you choose to add a promo rule later.</p>
+      </div>
+      <a href="product.html?product=Product_A&utm_campaign=Campaign_B" class="button button-light" id="promo-product-link" data-promo-type="Summer_Sale">Explore the offer</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">Demo Store · Adobe Analytics practice site · No real payments</footer>
+</body>
+</html>
